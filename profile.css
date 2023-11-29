@@ -1,0 +1,48 @@
+.profile {
+  width: 100%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.profile-text {
+  color: #666;
+  margin: 20px 0;
+}
+
+.profile-company {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.job-history {
+  
+}
+
+.job-history-item {
+  width: 100%;
+  border-bottom: 1px solid #e7eeed;
+}
+
+.job-history-title {
+  color: #666;
+}
+
+.job-history-title p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.job-history-title span {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.job-history-detail {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.job-history-detail p {
+  margin: 5px 0;
+  font-size: 14px;
+}

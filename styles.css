@@ -1,0 +1,272 @@
+html 
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  color: #fff;
+  height: 160px;
+}
+
+header .header {
+  background-color: #495C0B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+h2 {
+  padding: 10px;
+  background-color: #495C0B;
+  color: #fff;
+}
+
+h3 {
+  color: #495C0B;
+
+  border-bottom: 2px solid #495C0B;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+
+.logo-container img {
+  width: 80px;
+  height: auto;
+}
+
+nav {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  /*IE(Internet Explorer)・Microsoft Edgeへの対応*/
+  -ms-overflow-style: none;
+  /*Firefoxへの対応*/
+  scrollbar-width: none;
+}
+
+/*Google Chrome、Safariへの対応*/
+nav::-webkit-scrollbar{
+  display: none;
+}
+
+nav a {
+  min-width: 100px;
+  display: inline-block;
+  color: #495C0B;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #ECE7DD;
+}
+
+.top-feature {
+  width: 100%;
+  text-align: center;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.top-imgs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-img-container {
+  max-width: 30%;
+  height: auto;
+  text-align: center;
+}
+
+.top-img-container img {
+  max-width: 100%;
+}
+
+.syoukaibun {
+  color: #666;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.projects {
+  width: 100%;
+  padding: 0 30px 0 30px;
+  box-sizing: border-box;
+}
+
+.project {
+  width: 100%;
+}
+
+.project-table {
+  padding-bottom: 20px;
+}
+
+.project-desc-container {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #e7eeed;
+}
+
+.project-desc-container p {
+  font-size: 14px;
+}
+
+.project-detail-container {
+  color: #666;
+  font-size: 14px;
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #e7eeed;
+}
+
+.project-detail {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.project-title p {
+  margin: 0;
+}
+
+.project-title {
+  width: 30%;
+}
+
+.job-detail-container {
+  width: 70%;
+}
+
+.job-detail-box {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+
+.job-detail-box p {
+  margin: 0;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #495C0B;
+  color: #fff;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+/* スマートフォン向けのスタイル */
+@media only screen and (max-width: 600px) {
+  /* header .header {
+    padding: 0 30px;
+    justify-content: space-between;
+  }
+ */
+
+ nav {
+  justify-content: left;
+ }
+  .top-imgs {
+    justify-content: center;
+  }
+  .top-imgs .top-img-container:nth-child(1) {
+    max-width: 100%;
+  }
+  .top-imgs .top-img-container:nth-child(2) img {
+    display: none;
+  }
+  .top-imgs .top-img-container:nth-child(3) img {
+    display: none;
+  }
+}
+
+
+/* ハンバーガーアイコン */
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+  padding: 5px;
+  color: #fff;
+  font-size: 50px;
+}
+
+/* メニューのコンテナ */
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* ナビゲーションメニュー */
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-menu li {
+  margin-right: 15px;
+}
+
+/* チェックボックスを非表示に */
+#menu-toggle {
+  display: none;
+}
+
+/* チェックボックスがチェックされたときにメニューを表示 */
+#menu-toggle:checked + .nav-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px; /* メニューの表示位置調整 */
+  left: 0;
+  width: 50%;
+  background-color: #333;
+  text-align: center;
+}
+
+/* レスポンシブ対応：ハンバーガーアイコンを表示 */
+@media only screen and (max-width: 768px) {
+  .hamburger-icon {
+      display: block;
+  }
+
+  .menu-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .nav-menu {
+      display: none;
+  }
+
+  #menu-toggle:checked + .nav-menu {
+      display: flex;
+  }
+}

@@ -1,0 +1,42 @@
+.business {
+  width: 100%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.business-desc {
+  margin: 20px 0;
+}
+
+.business-desc-item {
+  display: flex;
+}
+
+.green-maru {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #495C0B;
+}
+
+.business-desc-item {
+  margin-bottom: 6px;
+}
+
+.business-desc-item p {
+  width: 80%;
+  color: #666;
+  margin: 0;
+  margin-left: 6px;
+}
+
+.business-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.business-image-container img {
+  max-width: 50%;
+  height: auto;
+}
