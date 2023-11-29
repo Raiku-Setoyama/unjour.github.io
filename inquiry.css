@@ -1,35 +1,7 @@
 .inpuiry {
   width: 100%;
-  padding: 0 30px;
+  padding: 0 100px;
   box-sizing: border-box;
-}
-
-.inquiry-button-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-self: center;
-}
-
-.inquiry-button-container a {
-	display: block;
-	text-align: center;
-	vertical-align: middle;
-	text-decoration: none;
-	width: 120px;
-	margin: auto;
-	padding: 1rem 4rem;
-	font-weight: bold;
-	background: #27acd9;
-	border: 6px outset #1699c5;
-	color: #fff;
-	transition: 0.5s;
-}
-a.btn_08:hover {
-	background: #44c6f2;
-	border: 6px outset #27acd9;
-	color: #fff;
 }
 
 iframe {
@@ -50,6 +22,10 @@ iframe {
 
 /* スマートフォン向けのスタイル */
 @media only screen and (max-width: 600px) {
+  .inpuiry {
+    padding: 0 30px;
+  }
+
   .form iframe:nth-child(1) {
     display: none;
   }

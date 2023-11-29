@@ -1,6 +1,6 @@
 .business {
   width: 100%;
-  padding: 0 30px;
+  padding: 0 100px;
   box-sizing: border-box;
 }
 
@@ -39,4 +39,11 @@
 .business-image-container img {
   max-width: 50%;
   height: auto;
+}
+
+/* スマートフォン向けのスタイル */
+@media only screen and (max-width: 600px) {
+  .business {
+    padding: 0 30px;
+  }
 }

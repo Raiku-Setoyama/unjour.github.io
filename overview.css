@@ -1,6 +1,6 @@
 .overview {
   width: 100%;
-  padding: 0 30px;
+  padding: 0 100px;
   box-sizing: border-box;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .overview-table {
-  width: 80%;
+  width: 100%;
 }
 
 .overview-table-row {
@@ -28,6 +28,7 @@
 
 .overview-title {
   width: 20%;
+  text-align: center;
 }
 
 .overview-title p {
@@ -36,4 +37,13 @@
 
 .overview-item {
   width: 70%;
+  margin-left: 10px;
+  box-sizing: border-box;
+}
+
+/* スマートフォン向けのスタイル */
+@media only screen and (max-width: 600px) {
+  .overview {
+    padding: 0 30px;
+  }
 }

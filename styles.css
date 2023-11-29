@@ -110,7 +110,7 @@ nav a:hover {
 
 .projects {
   width: 100%;
-  padding: 0 30px 0 30px;
+  padding: 0 100px;
   box-sizing: border-box;
 }
 
@@ -126,6 +126,7 @@ nav a:hover {
   width: 100%;
   height: 60px;
   border-bottom: 1px solid #e7eeed;
+  margin-bottom: 10px;
 }
 
 .project-desc-container p {
@@ -181,11 +182,9 @@ footer {
 
 /* スマートフォン向けのスタイル */
 @media only screen and (max-width: 600px) {
-  /* header .header {
-    padding: 0 30px;
-    justify-content: space-between;
-  }
- */
+ .projects {
+  padding: 0 30px;
+ }
 
  nav {
   justify-content: left;
@@ -232,41 +231,4 @@ footer {
 
 .nav-menu li {
   margin-right: 15px;
-}
-
-/* チェックボックスを非表示に */
-#menu-toggle {
-  display: none;
-}
-
-/* チェックボックスがチェックされたときにメニューを表示 */
-#menu-toggle:checked + .nav-menu {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 60px; /* メニューの表示位置調整 */
-  left: 0;
-  width: 50%;
-  background-color: #333;
-  text-align: center;
-}
-
-/* レスポンシブ対応：ハンバーガーアイコンを表示 */
-@media only screen and (max-width: 768px) {
-  .hamburger-icon {
-      display: block;
-  }
-
-  .menu-container {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  .nav-menu {
-      display: none;
-  }
-
-  #menu-toggle:checked + .nav-menu {
-      display: flex;
-  }
 }

@@ -1,6 +1,6 @@
 .profile {
   width: 100%;
-  padding: 0 30px;
+  padding: 0 100px;
   box-sizing: border-box;
 }
 
@@ -45,4 +45,11 @@
 .job-history-detail p {
   margin: 5px 0;
   font-size: 14px;
+}
+
+/* スマートフォン向けのスタイル */
+@media only screen and (max-width: 600px) {
+  .profile {
+    padding: 0 30px;
+  }
 }
